@@ -20,7 +20,7 @@ a {
 
 .header {
     background-color: rgba(74, 74, 74, 0.332);
-    height: 20vh;
+    height: 18vh;
     display: flex;
     align-items: center;
 }
@@ -59,8 +59,11 @@ button a {
     font-weight: bold;
 }
 
-main {
-    background-color: red;
+#index {
+    background-image: url(../img/main-bg.png);
+    background-position: center;
+    background-size: cover;
+
 }
 
 .container-main {
@@ -80,7 +83,7 @@ footer a {
 }
 
 .container-footer {
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +95,7 @@ footer a {
     color: white;
     margin-right: 20px;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
 .navbar a {
@@ -118,5 +122,16 @@ footer a {
 }
 
 button:hover {
-    background-color: rgb(255, 221, 0);
+    back
+    ground-color: rgb(255, 221, 0);
+}
+
+.box-logo {
+    width: 110px;
+    text-align: center;
+}
+
+#logo:hover {
+    width: 90px;
+    transition: 0.3s;
 }
