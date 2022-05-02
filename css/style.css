@@ -1,3 +1,9 @@
+:root {
+    --giallo: rgb(255, 221, 0);
+    --celioop: rgba(0, 255, 242, 0.574);
+    --celio: rgb(0, 255, 242);
+    }
+
 * {
     margin: 0;
     border: 0;
@@ -19,7 +25,7 @@ a {
 }
 
 .header {
-    background-color: rgba(74, 74, 74, 0.332);
+    background-color: rgba(0, 0, 0, 0.262);
     height: 15vh;
     display: flex;
     align-items: center;
@@ -49,6 +55,10 @@ a {
 /* MEDIA QUERY */
 
 @media screen and (max-width: 378px) {
+    
+    .header {
+        background-color: black;
+    }    
     
     .box-logo {
         display: flex;
@@ -108,7 +118,7 @@ a {
 }
 
 
-
+/* MAIN */
 
 #index {
     background-image: url(../img/main-bg.png);
@@ -133,6 +143,44 @@ a {
     color: rgba(255, 255, 255, 0.904);
 }
 
+.container-buttons {
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 378px) {
+    #index {
+        background-image: url(../img/main-bg-mobile.png);
+        opacity: 0.9;
+    } 
+
+    .container-main {
+        align-items: center;
+    }
+
+    .container-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 150px;
+        padding: 1em;
+        display: block;
+        margin-bottom: 3em;
+        margin-top: 3em;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: rgb(180, 255, 251);
+    }
+    
+}
+
+
+/* FOOTER */
 .container-footer a {
     color: white;
     font-size: 200%;
@@ -177,8 +225,28 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.275);
     font-size: 90%;
     height: 5vh;
+    text-align: center;
 }
 
+/* MEDIA QUERY */
+@media screen and (max-width: 378px) {
+    .container-footer {
+        display: none;
+    }
+
+    .icone {
+        display: none;
+    }
+
+    .firma {
+        height: 8vh;
+        padding: 1em;
+    }
+
+    button {
+        border: 5px solid var(--celio);
+    }
+}
 
 /* HOVER */
 
@@ -188,11 +256,12 @@ a {
 }
 
 .celio {
-    color: rgb(0, 255, 242);
+    color: var(--celio);
 }
 
-.button:hover {
-    background-color: rgb(255, 221, 0);
+button:hover {
+    background-color: var(--celio);
+    color: white;
 }
 
 .box-logo {
@@ -210,8 +279,9 @@ a {
     opacity: 0.5;
 }
 
-.button:focus {
+button:focus {
     box-shadow: none;
+    box-shadow: 5px 5px var(--celioop);
 }
 
 .celio:hover {
