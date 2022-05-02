@@ -1,0 +1,28 @@
+.container-main {
+    height: 68vh;
+    background-color: rgba(37, 37, 37, 0.537);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 80%;
+
+}
+
+.orari {
+    width: 18%;
+    padding: 1em;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-image: linear-gradient(to right, rgb(255, 94, 94), rgba(255, 200, 0, 0.353));
+}
+
+.chiuso {
+    color: rgb(255, 68, 68);
+    font-weight: bold;
+}
+

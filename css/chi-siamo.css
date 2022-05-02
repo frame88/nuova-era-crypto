@@ -1,36 +1,42 @@
+ul {
+    padding-left: 0;
+}
+
 .container-picture {
-    background-color: rgba(255, 0, 0, 0.541);
-    height: 70vh;
+    background-color: rgba(37, 37, 37, 0.537);
+    height: 68vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .box-pic {
-    align-items: center;
-    width: 30%;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    margin: 8em;
 }
 
 .container-picture img {
-    width: 200px;
+    width: 300px;
     padding: 1em;
     border-radius: 50%;
     border: 3px solid white;
     margin: 1em;
 }
 
-.box {
-    width: 200px;
+.list {
+    margin-top: 1em;
 }
 
-.box ul {
+.list span {
     display: block;
+    margin-bottom: 0.2em;
 }
 
-.box li {
-    margin: 2px;
+.pic {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }

@@ -20,7 +20,7 @@ a {
 
 .header {
     background-color: rgba(74, 74, 74, 0.332);
-    height: 18vh;
+    height: 15vh;
     display: flex;
     align-items: center;
 }
@@ -29,7 +29,6 @@ a {
     padding-left: 10vw;
     padding-right: 10vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -39,45 +38,102 @@ a {
     width: 100px;
 }
 
-/* #call {
-    font-size: 200%;
-    text-transform: uppercase;
-    color: white;
-} */
-
-button {
-    font-size: 150%;
-    text-transform: uppercase;
-    padding: 1em;
-    border-radius: 15px;
-    border: 2px solid rgb(255, 221, 0);
-    background-color: rgba(255, 221, 0, 0.453);
-    box-shadow: 2px 2px 4px #00000072;
+.icons {
+    display: none;
 }
 
-button a {
-    font-weight: bold;
+.slogan-mobile {
+    display: none;
 }
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 378px) {
+    
+    .box-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo {
+        width: 150px;
+    }
+    
+    body {
+    }
+    
+    .header {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .container-header {
+        background-color: rgb(249, 249, 249);
+        flex-direction: column;
+        border-radius: 0 0 70px 70px;
+    }
+    
+    .slogan-mobile {
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px #9b9b9b8e;
+    }
+    
+    #slogan {
+        display: none;
+    }
+    
+    .box-logo {
+        margin-top: 1em;
+        margin-bottom: 5em;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        margin-top: 30%;
+    }
+    
+    .icons img{
+        width: 30px;
+        margin: 1em;
+    }
+
+    .header {
+        height: 100vh;
+        display: flex;
+        align-items: start;
+    }
+}
+
+
+
 
 #index {
     background-image: url(../img/main-bg.png);
     background-position: center;
     background-size: cover;
-
+    opacity: 0.95;
 }
 
 .container-main {
-    height: 70vh;
+    height: 68vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
 }
 
-footer {
-    background-color: blue;
+.slogan {
+    height: 20%;
+    display: flex;
+    align-items: center;
 }
 
-footer a {
+#slogan {
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.container-footer a {
     color: white;
     font-size: 200%;
 }
@@ -107,13 +163,23 @@ footer a {
     right: 60px;
 }
 
-.icone a {
+.icone img {
+    width: 50px;
     margin-left: 20px;
 }
 
-.icone img {
-    width: 50px;
+.firma {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.275);
+    font-size: 90%;
+    height: 5vh;
 }
+
+
 /* HOVER */
 
 .navbar li:hover {
@@ -121,9 +187,12 @@ footer a {
     transition: 0.3s;
 }
 
-button:hover {
-    back
-    ground-color: rgb(255, 221, 0);
+.celio {
+    color: rgb(0, 255, 242);
+}
+
+.button:hover {
+    background-color: rgb(255, 221, 0);
 }
 
 .box-logo {
@@ -132,6 +201,21 @@ button:hover {
 }
 
 #logo:hover {
-    width: 90px;
-    transition: 0.3s;
+    width: 95px;
+    opacity: 0.5;
+    transition: 0.2s;
 }
+
+.icone a:hover {
+    opacity: 0.5;
+}
+
+.button:focus {
+    box-shadow: none;
+}
+
+.celio:hover {
+    opacity: 0.5;
+}
+
+
