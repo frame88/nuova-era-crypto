@@ -40,3 +40,10 @@ ul {
     flex-direction: column;
     align-self: center;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 378px) {
+    .header {
+        height: 40vh;
+    }
+}
