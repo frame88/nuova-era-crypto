@@ -55,13 +55,17 @@ ul {
 /* MEDIA QUERY */
 @media screen and (max-width: 576px) {
     .header {
-        height: 100%;
+        height: 30vh;
         flex-direction: column;
         align-items: center;
     }
 
     .container-buttons-header {
         display: flex;
+    }
+
+    .container-header {
+        background-position: 50% 50%;
     }
     
     .container-buttons-header a {
