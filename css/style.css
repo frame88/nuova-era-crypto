@@ -80,18 +80,21 @@ a {
     .container-header {
         background-color: rgb(0, 0, 0);
         flex-direction: column;
+        justify-content: flex-end;
         border-radius: 0 0 70px 70px;
-        background-image: url(../img/bianco\ 1.png);
-        background-position: top 20px;
         background-size: cover;
-        z-index: 1;
         height: 100%;
+        background-image: url(../img/main-bg-mobile.png);
+        opacity: 0.9;
+        background-size: cover;
+        background-position: 50% 75%;
     }
     
     .slogan-mobile {
         display: block;
         text-align: center;
         text-shadow: 2px 2px #9b9b9b8e;
+        margin-bottom: 2em;
     }
     
     #slogan {
@@ -124,7 +127,7 @@ a {
 /* MAIN */
 
 #index {
-    background-image: url(../img/main-bg.png);
+    background-image: url(../img/solo\ circuiti.png);
     background-position: center;
     background-size: cover;
     opacity: 0.95;
@@ -154,8 +157,6 @@ a {
 /* MEDIA QUERY */
 @media screen and (max-width: 576px) {
     #index {
-        background-image: url(../img/main-bg-mobile.png);
-        opacity: 0.9;
     } 
 
     .container-main {
