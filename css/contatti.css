@@ -25,9 +25,53 @@
     font-weight: bold;
 } */
 
+.container-buttons-header {
+    display: none;
+}
 /* MEDIA QUERY */
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
     .header {
-        height: 40vh;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .container-main {
+        height: 58vh;
+    } */
+
+    .row {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    
+    .orari {
+        width: 100%;
+        border: none;
+    }
+    
+    .container-buttons-header {
+        display: flex;
+    }
+
+    .container-buttons-header a {
+        color: white;
+        margin: 0.7em;
+        text-transform: uppercase;
+    }
+    
+    /* .container-buttons-header button {
+        display: inline;
+        border: 1px solid var(--celio);
+        width: 100px;
+        margin: 1em;
+        color: rgba(255, 94, 94, 0.83);
+        z-index: 1;
+    } */
+    
+    .box-logo {
+        margin-bottom: 2em;
     }
 }

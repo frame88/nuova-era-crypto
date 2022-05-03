@@ -41,9 +41,70 @@ ul {
     align-self: center;
 }
 
+.container-buttons-header {
+    display: none;
+}
+
+.list-mobile {
+    display: none;
+}
+
+.title-mobile {
+    display: none;
+}
 /* MEDIA QUERY */
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
     .header {
-        height: 40vh;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-buttons-header {
+        display: flex;
+    }
+    
+    .container-buttons-header a {
+        color: white;
+        margin: 0.7em;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    
+    .box-logo {
+        margin-bottom: 2em;
+    }
+    
+    /* FINO A QUI è LA STR BASE */
+    
+    .container-picture {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .box-pic {
+        margin: 0;
+    }
+    
+    .title-mobile{
+        display: block;
+    }
+    
+    .list-ema, .title-ema {
+        display: none;
+    }
+    
+    .list-mobile {
+        display: block;
+    }
+    
+    .list-mobile {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    
+    .list-mobile span {
+        display: block;
+        margin-bottom: 0.2em;
     }
 }
