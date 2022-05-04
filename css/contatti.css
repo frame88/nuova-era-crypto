@@ -28,6 +28,10 @@
 .container-buttons-header {
     display: none;
 }
+
+.row-buttons {
+    display: none;
+}
 /* MEDIA QUERY */
 @media screen and (max-width: 576px) {
     .header {
@@ -35,23 +39,38 @@
         flex-direction: column;
         align-items: center;
     }
-
-    /* .container-main {
-        height: 58vh;
-    } */
-
+    
+    .container-main {
+        flex-direction: column;
+    }
+    
     .row {
         flex-direction: column;
         width: 90%;
         margin-bottom: 2em;
         margin-top: 2em;
     }
+
+    .row-buttons {
+        display: block;
+    }
+    
+    .div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .div button {
+        margin: 10px;
+        border: 2px solid rgb(42 171 238);;
+    }
     
     .orari {
         width: 100%;
         border: none;
     }
-
+    
     .container-header {
         background-position: 50% 50%;
     }
@@ -78,4 +97,9 @@
     .box-logo {
         margin-bottom: 2em;
     }
+}
+
+button:hover {
+    background-color: rgb(42 171 238);
+    color: azure;
 }
