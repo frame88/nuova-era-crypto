@@ -112,12 +112,18 @@ a {
     
     .icons {
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
     
     .icons img{
         width: 30px;
-        margin: 1em;
+        margin-bottom: 1em;
+        margin-right: 1em;
+    }
+
+    #insta {
+        margin-top: 1em;
     }
 
     .header {
@@ -153,6 +159,10 @@ a {
 
 #slogan {
     color: rgba(255, 255, 255, 0.904);
+}
+
+#titolo {
+    text-align: center;
 }
 
 .container-buttons {
@@ -255,7 +265,7 @@ a {
     }
 
     .firma {
-        height: 8vh;
+        height: 10vh;
         padding: 1em;
     }
 }
@@ -273,7 +283,7 @@ a {
 
 button:hover {
     background-color: var(--celio);
-    color: white;
+    color: rgb(226, 181, 17);
 }
 
 .box-logo {

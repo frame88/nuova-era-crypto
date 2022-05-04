@@ -99,16 +99,18 @@ ul {
     }
     
     .list-mobile {
+        /* display: block; */
         display: block;
-    }
-    
-    .list-mobile {
         margin-top: 1em;
         margin-bottom: 2em;
     }
-    
+        
     .list-mobile span {
         display: block;
         margin-bottom: 0.2em;
+    }
+
+    .box-pic {
+        margin-left: 25px;
     }
 }
